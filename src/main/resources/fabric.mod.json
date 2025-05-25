@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial",
+	"version": "1.0.0",
+	"name": "tutorial",
+	"description": "A Fabric mod for learning how to create mods.",
+	"authors": [
+		"Nekiel"
+	],
+	"contact": {
+		"homepage": "vittorio.dev",
+		"sources": "https://github.com/MalinvernoVittorio/tutorial-mod-1.21.1.git"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorial/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"vittorio.tutorial.Tutorial"
+		],
+		"fabric-datagen": [
+			"vittorio.tutorial.TutorialDataGenerator"
+		],
+		"client": [
+			"vittorio.tutorial.TutorialClient"
+		]
+	},
+	"mixins": [
+		"tutorial.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
