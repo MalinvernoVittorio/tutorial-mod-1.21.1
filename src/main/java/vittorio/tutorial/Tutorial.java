@@ -1,6 +1,7 @@
 package vittorio.tutorial;
 
 import net.fabricmc.api.ModInitializer;
+import vittorio.tutorial.item.ModItems;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,5 +16,8 @@ public class Tutorial implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		// This code runs as soon as Minecraft is in a mod-loading state.
+		ModItems.registerModItem();
 	}
 }
